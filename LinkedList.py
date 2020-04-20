@@ -57,12 +57,14 @@ class list:
     
 if __name__=='__main__': 
     llist=list()
-    llist.head=node(1)
+    first=node(1)
     second=node(2)
     third=node(3)
-    llist.head.next=second
-    second.next=third
-    third.next=None
+    llist.head=first
+    print(llist.head)
+    # llist.head.next=second
+    # second.next=third
+    # third.next=None
 
 
 
