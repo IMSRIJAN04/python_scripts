@@ -1,5 +1,3 @@
-#!/bin/python3
-
 import math
 import os
 import random
@@ -14,7 +12,6 @@ queries=[
 ]
 print(len(queries))
 
-# Complete the arrayManipulation function below.
 def arrayManipulation(n, queries):
     arr=[0]*(n+1)
     for i in range(len(queries)):
