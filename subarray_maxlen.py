@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 hash_map={}
 sum=0
 max_length=0
@@ -25,7 +24,6 @@ for i in range(len(nums)):
         
 print(max_length)
     
-=======
 hash_map={}
 sum=0
 max_length=0
@@ -52,4 +50,3 @@ for i in range(len(nums)):
         
 print(max_length)
     
->>>>>>> 3aed84638617f13eeb8feedbd02a717452b4d563
