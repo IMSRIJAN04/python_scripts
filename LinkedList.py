@@ -3,13 +3,14 @@ class node:
         self.data=x
         self.next=None
     
-class list:
+class List:
     def __init__(self):
-        self.head=self.tail=None
+        self.head = None
+        self.tail=None
     
     def insertfirst(self,x):
         self.temp=node(x)
-        if self.head==None:
+        if self.head is None:
             self.head=self.tail=self.temp
         else:
             self.temp.next=self.head
@@ -56,15 +57,14 @@ class list:
             t=t.next
     
 if __name__=='__main__': 
-    llist=list()
-    first=node(1)
-    second=node(2)
-    third=node(3)
-    llist.head=first
-    print(llist.head)
-    # llist.head.next=second
-    # second.next=third
-    # third.next=None
+    llist=List()
+    llist.insertfirst(1)
+    llist.insertfirst(2)
+    llist.insertfirst(5)
+    llist.insertlast(9)
+    llist.deletefirst()
+    llist.deletelast()
+    llist.display()
 
 
 
