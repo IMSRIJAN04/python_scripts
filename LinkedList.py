@@ -7,50 +7,50 @@ class list:
     def __init__(self):
         self.head=self.tail=None
     
-    def insertfirst(s,x):
-        s.temp=node(x)
-        if head==None:
-            head=tail=temp
+    def insertfirst(self,x):
+        self.temp=node(x)
+        if self.head==None:
+            self.head=self.tail=self.temp
         else:
-            temp.next=head
-            head=temp
+            self.temp.next=self.head
+            self.head=self.temp
     
-    def insertlast(x):
-        temp=node(x)
-        if head==None:
-            head=tail=temp
+    def insertlast(self,x):
+        self.temp=node(x)
+        if self.head==None:
+            self.head=self.tail=self.temp
         else:
-            tail.next=temp
-            tail=temp
+            self.tail.next=self.temp
+            self.tail=self.temp
     
-    def deletefirst():
-        if head==None:
+    def deletefirst(self):
+        if self.head==None:
             print("list is empty")
-        elif head==tail:
-            head=tail=None
+        elif self.head==self.tail:
+            self.head=self.tail=None
         else:
-            x=head.data
-            head=head.next
-            return x
+            self.x=self.head.data
+            self.head=self.head.next
+            return self.x
     
-    def deletelast():
-        if head==None:
+    def deletelast(self):
+        if self.head==None:
             print("list is empty")
-        elif head==tail:
-            head=tail=None
+        elif self.head==self.tail:
+            self.head=self.tail=None
         else:
-            x=tail.data
-            t=node()
-            t=head
-            while t.next!=tail:
+            self.x=self.tail.data
+            t=node(0)
+            t=self.head
+            while t.next!=self.tail:
                 t=t.next
             t.next=None
-            tail=t
-            return x
+            self.tail=t
+            return self.x
     
-    def display():
-        t=node()
-        t=head
+    def display(self):
+        t=node(0)
+        t=self.head
         while t!=None:
             print(t.data)
             t=t.next
