@@ -9,12 +9,12 @@ class List:
         self.tail=None
     
     def insertfirst(self,x):
-        self.temp=node(x)
+        temp=node(x)
         if self.head is None:
-            self.head=self.tail=self.temp
+            self.head=self.tail=temp
         else:
-            self.temp.next=self.head
-            self.head=self.temp
+            temp.next=self.head
+            self.head=temp
     
     def insertlast(self,x):
         self.temp=node(x)
@@ -30,9 +30,9 @@ class List:
         elif self.head==self.tail:
             self.head=self.tail=None
         else:
-            self.x=self.head.data
+            x=self.head.data
             self.head=self.head.next
-            return self.x
+            return x
     
     def deletelast(self):
         if self.head==None:
@@ -40,14 +40,14 @@ class List:
         elif self.head==self.tail:
             self.head=self.tail=None
         else:
-            self.x=self.tail.data
+            x=self.tail.data
             t=node(0)
             t=self.head
             while t.next!=self.tail:
                 t=t.next
             t.next=None
             self.tail=t
-            return self.x
+            return x
     
     def display(self):
         t=node(0)
