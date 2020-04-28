@@ -1,5 +1,7 @@
 matrix=[["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","0","1"],["0","0","0","0","0"]]
 r=len(matrix)
+if r==0:
+    print(0)
 c=len(matrix[0])
 s=[[0 for _ in range(c)] for _ in range(r)]
 for i in range(c):
