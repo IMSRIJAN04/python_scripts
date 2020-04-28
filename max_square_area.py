@@ -25,4 +25,4 @@ for i in range(r):
 if max_e==1:
     print(1)
 else:
-    print(max_e*2)
+    print(max_e*max_e)
