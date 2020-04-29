@@ -1,9 +1,3 @@
-import math
-import os
-import random
-import re
-import sys
-
 n=10
 queries=[
     [1,5,3],
