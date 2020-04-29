@@ -1,3 +1,4 @@
+#Basic implementation of linked list
 class node:
     def __init__(self,x):
         self.data=x
