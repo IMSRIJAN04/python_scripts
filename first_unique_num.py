@@ -1,5 +1,5 @@
 class FirstUnique:
-    def __init__(self, nums: List[int]):
+    def __init__(self, nums):
         self.a=nums
         self.m={}
         self.q=[]
@@ -28,8 +28,3 @@ class FirstUnique:
         self.m[value]+=1
         self.q.append(value)
 
-
-# Your FirstUnique object will be instantiated and called as such:
-# obj = FirstUnique(nums)
-# param_1 = obj.showFirstUnique()
-# obj.add(value)
