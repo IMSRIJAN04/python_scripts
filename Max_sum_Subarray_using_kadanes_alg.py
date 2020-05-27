@@ -14,6 +14,7 @@ def maxx(A):
                 ans=sum
     return ans
 if __name__ == "__main__":
+    
     A=[1,3,4,-10]
     res=maxx(A)
     print(res)
